@@ -10,7 +10,7 @@ ui <- fluidPage(
   sidebarPanel(
     titlePanel("Seurat two dimensions representation"),
     selectInput("reduction", "Choose a Reduction", choices = reductions),
-    sliderInput("x", label = "If x is", min = 0.1, max = 1, value = 0.1, step = 0.1)),
+    sliderInput("x", label = "Resolution:", min = 0.1, max = 1, value = 0.1, step = 0.1)),
   
   mainPanel(
     plotOutput("umap")
