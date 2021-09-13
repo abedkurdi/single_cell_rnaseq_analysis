@@ -2,6 +2,9 @@
 library(shiny)
 library(Seurat)
 library(ggplot2)
+options(shiny.host = '0.0.0.0')
+options(shiny.port = 1122)
+#runApp('shinyapp')
 load("~/samples/single_cell_samples/single_cell_rnaseq_analysis/samples/SRR8526547/SRR8526547.RData")
 
 reductions <- c("umap","tsne","pca")
