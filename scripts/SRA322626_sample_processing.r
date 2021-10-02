@@ -62,4 +62,4 @@ all_markers <- FindAllMarkers(sample, logfc.threshold = 0.25, min.pct = 0.25, on
 new.cluster.ids <- c("B cells","Hematopoietic Stem Cells","Reticulocytes","Classical Monocytes","Immature B Cells")
 names(new.cluster.ids) <- levels(sample)
 sample <- RenameIdents(sample, new.cluster.ids)
-DimPlot(sample, reduction = "tsne", label = TRUE, pt.size = 0.5) + NoLegend()+labs(title="Bone Marrow sample")
+DimPlot(sample, reduction = "tsne", label = TRUE, pt.size = 1.5) + NoLegend()+labs(title="Bone Marrow sample")
